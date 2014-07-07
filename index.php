@@ -2,12 +2,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hello World</title>
+  <title>xkcd style password generator.</title>
 
   
   <link rel='stylesheet' href='styles.css' type='text/css'>
  <?php require 'logic.php' ?>
-  
+  <?php require 'listofwords.php' ?>
 
 </head>
 <body class="<?php echo $image; ?>">
@@ -20,6 +20,11 @@
 
 
 
+<?php  
+foreach($keywords as $keyword => $result) {
+    echo $keyword." is a ".$result.".<br>";
+}
+?>   
   
   
 </body>
