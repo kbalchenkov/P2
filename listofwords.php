@@ -1,3 +1,5 @@
+<?php
+
 $keywords = Array(
 'be',
 'and',
@@ -3123,7 +3125,7 @@ $keywords = Array(
 'loud',
 'glove',
 'suspect',
-'sufficient1z
+'sufficient',
 'narrative',
 'photographer',
 'helicopter',
@@ -4100,18 +4102,13 @@ $keywords = Array(
 'cart',
 'oversee',
 'stem',
-'o'clock',
 'elder',
-'o'clock',
-'o'clock',
-'o'clock',
 'pro',
 'inspiration',
 'Dutch',
 'quantity',
 'trailer',
 'mate',
-'o'clock',
 'Greek',
 'genius',
 'monument',
@@ -5000,3 +4997,4 @@ $keywords = Array(
 'dictate'
 );
 
+?>
