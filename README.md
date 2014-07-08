@@ -1,7 +1,7 @@
 # P2
 
 ## Live URL
-<http://p#.dwaclassharvard.me>
+<http://p2.dwaclassharvard.me>
 
 ## Description
 Create an xkcd style password generator.

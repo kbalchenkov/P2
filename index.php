@@ -1,10 +1,3 @@
-<?php
-error_reporting(E_ALL);         # Report Errors, Warnings, 
-ini_set('display_errors' , 1);   # Display errors on page (instead of a log file)
- 
-?>
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,10 +15,15 @@ ini_set('display_errors' , 1);   # Display errors on page (instead of a log file
 
 <body>
 
+<div class='container'>
 
-	<h1>xkcd style password generator</h1>
+	<h1 style = "color:#40B3DF; font-family:verdana;"> xkcd Style Password Generator</h1>
+ 
+ <P class='description'> Use this generator to generate a random password that is much safer then regular made up password. See comic strip below for more info. Enjoy it </p>
  
 <form method='POST' action='index.php'>
+
+<P class='input'>
 
 # of words: <input name="numberofwords" id ="numberofwords" min="1" max="5" maxlength=1 type="number" required> (Max 5)<br>
 <br>
@@ -39,7 +37,8 @@ ini_set('display_errors' , 1);   # Display errors on page (instead of a log file
  
 <input type='checkbox' name='adduppercase' id='adduppercase' > 
 <label for='adduppercase'>Upper case the first letter</label><br><br>
- 
+
+</p>
  
 <input type='submit' value='Generate!'>
  
@@ -47,30 +46,33 @@ ini_set('display_errors' , 1);   # Display errors on page (instead of a log file
 
 
 
-<pre>
-    <?php print_r($_POST); ?>
-</pre>
-
-
-
-
+<p class='password'>
 <?php 
-      foreach($displaywords as $key => $value) { ?>
-		<?php echo $value; ?> + <br>
-		<?php }?>
+      foreach($displaywords as $key => $value) { 
+		if (in_array($adduppercase, $_POST)) {	
+				  echo $values = ucwords($value);  
+				  	
+				}	
+				else { echo $value;} 
+		}
+
+?>
+<?php echo $randomnumber; ?>
+<?php echo $symbols[$rand_symbol]; ?>
+
+</p>
+
+<p class='details'>
+			<a href='http://xkcd.com/936/'>xkcd password strength</a><br>
+		
+			<a href='http://xkcd.com/936/'>
+				<img src='http://imgs.xkcd.com/comics/password_strength.png' alt='xkcd style passwords'>
+			</a>
+			<br>
+</p>
 
 
-<pre>
-    <?php print_r($displaywords); ?>
-</pre>
-
-
-<?php  
-	foreach($keywords as $keyword => $result) { ?>
-		<?php echo $keyword; ?> is a <?php echo $result;?> <br> 
-<?php } ?>
-
- 
+ </div>
  
 
 </body>

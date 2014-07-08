@@ -1,6 +1,3 @@
-
-
-
 <?php
 
 
@@ -11,38 +8,37 @@ $i = 0;
 
 while($i < $imputnumber){
 	
-	$rand_word = array_rand($keywords);
+	$rand_value = array_rand($keywords);
 
-	$rand_value = $keywords[$rand_word];
+	$rand_word = $keywords[$rand_value];
 	
-	$displaywords[] = $rand_value;
+	$displaywords[] = $rand_word;
+	
 	
 	$i++;
 
+	
 }
 
 ?>
 
 <?php
+$adduppercase = $_POST["adduppercase"];
 
-$numberselected = $_POST["addanumber"];
+$addasymbol = $_POST["addasymbol"];
+$symbols = array("$", "@", "#", "&", "!");
 
-If(
+$addanumber = $_POST["addanumber"];
 
-$imputnumber = $_POST["numberofwords"];
+foreach ($_POST as $key => $value) {
 
-$i = 0;
-
-while($i < $imputnumber){
+    if (in_array($addasymbol, $_POST)) {
+		$rand_symbol = array_rand($symbols, 1);
+		}
+	if (in_array($addanumber, $_POST)) {	
+		$randomnumber = rand(0,100);
+		}
 	
-	$rand_word = array_rand($keywords);
-
-	$rand_value = $keywords[$rand_word];
-	
-	$displaywords[] = $rand_value;
-	
-	$i++;
-
 }
 
 ?>
