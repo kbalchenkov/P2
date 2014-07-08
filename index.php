@@ -9,6 +9,7 @@
  <?php require 'listofwords.php' ?>
  <?php require 'logic.php' ?>
 
+ <?php error_reporting(0); ?>
   
 
 </head>
