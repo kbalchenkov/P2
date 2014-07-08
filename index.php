@@ -25,7 +25,7 @@
 
 <P class='input'>
 
-# of words: <input name="numberofwords" id ="numberofwords" min="1" max="5" maxlength=1 type="number" required> (Max 5)<br>
+# of words: <input name="numberofwords" id ="numberofwords" min="1" max="5" type="number" required> (Max 5)<br>
 <br>
 
 
