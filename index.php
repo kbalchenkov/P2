@@ -1,3 +1,5 @@
+ <?php error_reporting(0); ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +11,7 @@
  <?php require 'listofwords.php' ?>
  <?php require 'logic.php' ?>
 
- <?php error_reporting(0); ?>
+
   
 
 </head>
